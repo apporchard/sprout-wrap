@@ -8,10 +8,6 @@ recipes:
 - homebrew::install_formulas
 - homebrew::install_casks
 
-# apps
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::shiftit
-
 # settings
 - sprout-osx-settings
 - sprout-osx-settings::dock_preferences
@@ -28,33 +24,23 @@ recipes:
 # development (rails)
 - sprout-rbenv
 - sprout-ruby
-- sprout-mysql
 - sprout-postgresql
 
-# apps (editors)
-- sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
+# apps
+- sprout-osx-apps::shiftit
 
 node_attributes:
   sprout:
     git:
-      domain: pivotal.io
+      domain: buildgroundwork.com
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
+        - initials: am
+          name: Adam Milligan
+          username: adam
       projects:
         -
           name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/buildgroundwork/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -85,15 +71,8 @@ node_attributes:
       - rbenv-binstubs
     casks:
       - firefox
-      - flycut
-      - rowanj-gitx
-      - github-desktop
       - google-chrome
-      - google-drive
-      - google-hangouts
       - macvim
-      - skype
-      - textmate
       - vagrant
       - virtualbox
       - xquartz
